@@ -57,21 +57,21 @@
     ```
 
 2. **分支的新建与合并**
-```
-新建一个分支同时切换到那个分支上
-git checkout -b [分支名]
-等同于
-git branch [分支名]
-git checkout [分支名]
-```
+    ```
+    新建一个分支同时切换到那个分支上
+    git checkout -b [分支名]
+    等同于
+    git branch [分支名]
+    git checkout [分支名]
+    ```
 
-```
-合并分支
-git merge [分支名]
-```
+    ```
+    合并分支
+    git merge [分支名]
+    ```
 
-```
-删除分支
-git branch -d [分支名]
-```
+    ```
+    删除分支
+    git branch -d [分支名]
+    ```
 
