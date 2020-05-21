@@ -451,15 +451,102 @@ div {
 
 ## 边框
 
-### 边框样式 border-style
+### 样式 border-style
 
-| 属性 | 值   |
-| ---- | ---- |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
+| 属性   | 值                                                 |
+| ------ | -------------------------------------------------- |
+| dotted | 点线边框                                           |
+| dashed | 虚线边框                                           |
+| solid  | 实线边框                                           |
+| double | 两个边框（两个边框的宽度和 border-width 的值相同） |
+| groove | 3D沟槽边框（效果取决于边框的颜色值）               |
+| ridge  | 3D脊边框（效果取决于边框的颜色值）                 |
+| inset  | 3D嵌入边框（效果取决于边框的颜色值）               |
+| outset | 3D突出边框（效果取决于边框的颜色值）               |
 
+### 宽度 border-width
+
+- 指定长度值：比如 2px 或 0.1em
+- 3个关键字之一：`thick` `medium` `thin`
+
+```css
+p.one {
+    border-style:solid;
+    border-width:5px;
+}
+```
+
+### 颜色 border-color
+
+```css
+p.one {
+    border-style:solid;
+    border-color:red;
+}
+```
+
+### 单独设置各边
+
+```css
+p {
+    border-top-style:dotted;
+    border-right-style:solid;
+    border-bottom-style:dotted;
+    border-left-style:solid;
+}
+```
+
+> border-style/width/color 属性可以有 1-4 个值：上右底左；上(左右)底；(上底)(左右)；四边框
+
+### 简写属性
+
+```css
+border: 5px solid red;
+/* width style color */
+```
+
+
+
+## 轮廓 Outline
+
+轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到**突出元素**的作用
+
+属性：`outline` `outline-color` `outline-style` `outline-width`
+
+
+
+## 外边距 Margin
+
+CSS margin(外边距)属性定义元素周围的空间。
+
+属性：`margin-top` `margin-bottom` `margin-right` `margin-left`
+
+属性值：`auto` `length` `%`
+
+> margin 可以使用负值，重叠的内容
+
+### 简写属性
+
+```css
+margin:100px 50px;
+```
+
+> margin 属性可以有 1-4个值：上右下左；上(左右)下；(上下)(左右)；四边框
+
+
+
+## 填充 Padding
+
+CSS padding（填充）是一个简写属性，定义元素边框与元素内容之间的空间，即上下左右的内边距。
+
+属性：`padding-top` `padding-bottom` `padding-right` `padding-left`
+
+属性值：`length` `%`
+
+### 简写属性
+
+```css
+pading:25px 50px;
+```
+
+> padding 属性可以有 1-4个值：上右下左；上(左右)下；(上下)(左右)；四边框
